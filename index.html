@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workday Progress</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Workday Progress</h1>
+        <div class="time-remaining">
+            <p id="time-minutes"></p>
+            <p id="time-seconds"></p>
+        </div>
+        <div class="progress-bar-container">
+            <div class="progress-bar">
+                <div class="progress-bar-fill" id="progress-bar-fill"></div>
+            </div>
+            <div class="progress-percentage" id="progress-percentage">0.000%</div>
+        </div>
+        <div class="time-settings">
+            <input type="time" id="start-time" value="08:00">
+            <input type="time" id="end-time" value="17:00">
+            <button id="set-time">변경하기</button>
+        </div>
+        <button id="subtract-time">-5초</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
